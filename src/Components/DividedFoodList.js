@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import FoodCategory from "./FoodCategory";
 import "./../App.css";
 import olita from "./../Assets/olita.png";
+
 const DividedFoodList = ({ lang, match }) => {
   const { foundPlace } = useContext(DataContext);
   const divisionFoods = match.params.divisionName;

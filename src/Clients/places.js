@@ -12,6 +12,7 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
  import Glass from './../Assets/search-outline.svg'
 import "./../App.css";
 import home from './../Assets/home.svg'
+import imageLogo from './../Assets/rucula.png'
 // import { Ionicon } from 'react-icons/io';
 
 
@@ -102,7 +103,7 @@ function Places() {
                   ES
                 </div>
               </div>
-                <img src={foundPlace.iso} alt="logo" className="isoTipo" />
+                <img src={imageLogo} alt="logo" className="isoTipo" />
               <div className="homeAndSearch">
                 <div className="search-bar" onClick={() => setBuscar(!buscar)}>
                   {buscar ? (
