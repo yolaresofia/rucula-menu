@@ -1,0 +1,418 @@
+/*   ---- ---GENERAL  ---- ------ */
+@font-face {
+    font-family: Glacial Regular;
+    src: url("./Assets/GlacialIndifference-Regular.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+@font-face {
+    font-family: Didot;
+    src: url("./Assets/Didot-HTF-M06-Medium.ttf");
+}
+
+body {
+    animation: fadeIn ease forwards 1.3s;
+    background-color: white;
+
+}
+
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("./Assets/sand.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.App-desktop-container {
+    min-height: 100vh;
+    /* padding-top: 10vh; */
+}
+
+.visitaweb {
+    margin: 10px auto 0 auto;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    color: #022358;
+    padding: 2%;
+    font-family: 'Noto Sans JP';
+}
+
+.visitaweb-container {
+    border-bottom: 1.5px solid #fff;
+    width: 34%;
+    margin: 0 auto;
+}
+
+.olita {
+    width: 40%;
+    margin: 5vh auto;
+    display: block;
+}
+
+.fadeIn {
+    animation: fadeIn ease 0.4s;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+.places ul {
+    padding: 0;
+}
+
+.homeIcon {
+    width: 7%;
+    margin: 2% auto;
+    text-align: center;
+    display: block;
+}
+
+.places h1 {
+    margin: 0.4rem 0.2rem 0.8rem 0.2rem;
+    font-weight: 100;
+}
+
+.places {
+    margin: 0;
+    justify-self: center;
+}
+
+.list-food {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 0;
+}
+
+.categoria {
+    min-height: 40vh;
+}
+
+.division {
+    min-height: 55vh;
+}
+
+.list-add {
+    min-height: 55vh;
+}
+
+.box {
+    width: 100% !important;
+    display: block;
+    margin: auto;
+    align-items: "center";
+    display: "flex";
+}
+
+.isoTipo {
+    max-width: 74vw;
+    margin: auto;
+    display: block;
+}
+
+.lang-buttons {
+    padding: 0.5rem;
+}
+
+.lang-buttons button {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+
+.search-bar {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin: 0 1rem;
+}
+
+.search-glass {
+    width: 20px;
+    margin: 7px;
+    max-height: 20px
+}
+
+.input {
+    font-size: 1.2rem;
+    padding: 10px;
+    padding-bottom: 0.2rem;
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+.iconos-filter {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.4rem;
+    margin: 0.5rem;
+}
+
+.iconos-filter-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    padding: 0.3rem 1rem;
+}
+
+/*   ---- ---FOOD BOX  ---- ------ */
+.food-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.food-box h4 {
+    font-family: Didot !important;
+    color: #022358;
+
+    padding-left: 0.2rem;
+    font-size: 1.35rem !important;
+    /* font-weight: 100; */
+    z-index: 4 !important;
+}
+
+.left-box h4 {
+    margin-top: 0;
+}
+
+.food-box .h4-precio {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0.1rem;
+    color: #754c24;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.food-box p {
+    font-weight: 100;
+    letter-spacing: -0.5px;
+    line-height: 23px;
+    padding-top: 4px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0.1rem;
+    color: #754c24;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.title-category {
+    font-family: Didot !important;
+    font-style: normal !important;
+    text-align: right;
+    font-size: 1.6rem !important;
+    margin: 1.5rem 0 1rem auto;
+    font-weight: 300;
+}
+
+.left-box {
+    text-align: left;
+}
+
+.headerCategory {
+    text-transform: uppercase !important;
+    font-weight: 500;
+    padding-top: 10%;
+    font-family: Didot;
+    line-height: 26px;
+    font-size: 1.8rem;
+}
+
+.headerDivision {
+    text-transform: uppercase !important;
+    font-weight: 500;
+    padding-top: 10%;
+    font-family: Didot;
+    color: #022358;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.perLanguage {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #556877;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.perLanguage-act {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 5%;
+    border-bottom: 1.3px solid white;
+    cursor: pointer;
+    text-decoration: none;
+    color: #022358;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    margin: 2%;
+}
+
+.homeAndSearch {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.buscador p {
+    margin-left: 2%;
+    color: #ffffff;
+    font-size: 0.8em;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/*------------------------- MODAL--------------------------*/
+.fadeOutPopUp {
+    animation: fadeOut ease forwards 0.5s;
+}
+
+.fadeOut {
+    animation: fadeOut ease forwards 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/*   ---- ---- allergens ---- ------ */
+.icono-svg {
+    width: 3.5rem;
+    margin: auto;
+    filter: invert(14%) sepia(35%) saturate(3000%) hue-rotate(186deg) brightness(71%) contrast(54%)
+}
+
+.iconBoxContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.iconBoxContainerChecked {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.4;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/*//////////////////queries bb////////////////*/
+@media only screen and (min-width : 600px) {
+    .isoTipo {
+        width: 30vw;
+    }
+
+    .olita {
+        width: 15vw;
+    }
+
+    .headerDivision {
+        padding-top: 2%
+    }
+
+    .homeIcon {
+        width: 3%
+    }
+
+    .input {
+        width: 35%
+    }
+
+    .iconos-filter {
+        width: 35%;
+        margin: 0 auto;
+        padding-top: 2%;
+    }
+
+    .list-food {
+        width: 60%;
+        margin: 0 auto
+    }
+
+    .headerCategory {
+        padding-top: 3%
+    }
+}
+
+@media only screen and (device-width : 375px) {}
+
+@media only screen and (max-width : 360px) {}
