@@ -3,7 +3,7 @@ import { DataContext } from "../Context/Context";
 import { Link } from "react-router-dom";
 import FoodCategory from "./FoodCategory";
 import "./../App.css";
-import olita from "./../Assets/olita.png";
+// import olita from "./../Assets/olita.png";
 
 const DividedFoodList = ({ lang, match }) => {
   const { foundPlace } = useContext(DataContext);
@@ -14,7 +14,7 @@ const DividedFoodList = ({ lang, match }) => {
   return (
     <div className="centered fadeIn">
       <div className="list-add">
-      <img className="olita" src={olita} alt="" />
+      <div style={{width:"40px",margin:'auto', border:".5px solid gray"}}></div>
 
         <ul className="list-food division">
           {selectedCategories.map((category, index) => {
@@ -26,7 +26,7 @@ const DividedFoodList = ({ lang, match }) => {
               >
                 <FoodCategory {...category} lang={lang} />
 
-                <img className="olita" src={olita} alt="" />
+                <div style={{width:"40px",margin:'auto', border:".5px solid gray"}}></div>
               </Link>
             );
           })}

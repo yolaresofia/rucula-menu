@@ -9,13 +9,11 @@ import foods from "../foods.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 // import lupita from './../Assets/lupita.svg'
- import Glass from './../Assets/search-outline.svg'
+import Glass from "./../Assets/search-outline.svg";
 import "./../App.css";
-import home from './../Assets/home.svg'
-import imageLogo from './../Assets/rucula.png'
+import home from "./../Assets/home.svg";
+import imageLogo from "./../Assets/rucula.png";
 // import { Ionicon } from 'react-icons/io';
-
-
 
 const foundPlace = foods.places[0];
 const option1 = foundPlace.place;
@@ -28,7 +26,6 @@ function Places() {
   const [lang, setLang] = useState("ca");
   const [isOpen] = useState(false);
   const [showBack, setShowBack] = useState(false);
-
 
   const categoryAndSearchSwitcher = () => {
     setBuscar(false);
@@ -48,18 +45,18 @@ function Places() {
     }
   };
 
-  const visita = () => {
-    switch (lang) {
-      case "ca":
-        return "Visiti la nostra web";
-      case "en":
-        return "Visit our website";
-      case "es":
-        return "Visita nuestra web";
-      default:
-        return "Visiti la nostra web";
-    }
-  };
+  // const visita = () => {
+  //   switch (lang) {
+  //     case "ca":
+  //       return "Visiti la nostra web";
+  //     case "en":
+  //       return "Visit our website";
+  //     case "es":
+  //       return "Visita nuestra web";
+  //     default:
+  //       return "Visiti la nostra web";
+  //   }
+  // };
 
   return (
     <div className="App version-movil">
@@ -72,18 +69,18 @@ function Places() {
                 buscar,
                 foundPlace,
                 flattened,
-                isOpen
+                isOpen,
               }}
             >
-                {showBack ? (
-                  <div onClick={categoryAndSearchSwitcher}>
-                    {" "}
-                    <Link to={`/${option1}`}>
-                      <img className="homeIcon" src={home} alt=""/>
-                    </Link>
-                  </div>
-                ) :  <a href="https://politocastelldefels.com"><h6 className="visitaweb">{visita()}</h6><div className="visitaweb-container"> </div></a>}
-              <div className="languages">
+              {showBack ? (
+                <div onClick={categoryAndSearchSwitcher}>
+                  {" "}
+                  <Link to={`/${option1}`}>
+                    <img className="homeIcon" src={home} alt="" />
+                  </Link>
+                </div>
+              ) : null}
+              <div className="languages" >
                 <div
                   className={lang === "ca" ? "perLanguage-act" : "perLanguage"}
                   onClick={() => setLang("ca")}
@@ -103,7 +100,7 @@ function Places() {
                   ES
                 </div>
               </div>
-                <img src={imageLogo} alt="logo" className="isoTipo" />
+              <img src={imageLogo} alt="logo" className="isoTipo" />
               <div className="homeAndSearch">
                 <div className="search-bar" onClick={() => setBuscar(!buscar)}>
                   {buscar ? (
@@ -113,8 +110,7 @@ function Places() {
                     </div>
                   ) : (
                     <div className="buscador">
-                    
-                      <img src={Glass} className="search-glass" alt=""/> 
+                      <img src={Glass} className="search-glass" alt="" />
                       <p>{search()}</p>
                     </div>
                   )}
@@ -141,7 +137,9 @@ function Places() {
                   <Route
                     exact
                     path="/:place/division/:divisionName"
-                    render={(props) => <DividedFoodlist {...props} lang={lang} />}
+                    render={(props) => (
+                      <DividedFoodlist {...props} lang={lang} />
+                    )}
                   />
                   <Route
                     exact

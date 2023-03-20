@@ -27,9 +27,9 @@
       "categorias": [
         {
           "division": "paracomer",
-          "nombre": "Per picar",
-          "nombre_en": "To snack",
-          "nombre_es": "Para Picar",
+          "nombre": "paracomer",
+          "nombre_en": "to eat",
+          "nombre_es": "para comer",
           "imagen": "",
           "data": [
             {
@@ -99,25 +99,59 @@
               "allergen": []
             },
             {
-              "nombre": "Steak tartar",
-              "nombre_en": "Steak tartar",
-              "nombre_es": "Steak tartar",
-              "descripcion": "acompanyat de patates de muntanya",
-              "descripcion_en": "with mountain potatoes",
-              "descripcion_es": "acompañado de patatas de montaña",
-              "precio": "12,50",
+              "nombre": "Focaccia",
+              "nombre_en": "Focaccia",
+              "nombre_es": "Focaccia",
+              "descripcion": "de ruca, tomàquets secs, tapenade, anxoves i tofona negra",
+              "descripcion_en": "of rugula, sun dried tomatoes, tapenade, anchovies and black truffle",
+              "descripcion_es": "de rúcula, tomatitos secos, tapenade, anchoas y trufa negra",
+              "precio": "11,80",
               "tags": "",
-              "allergen": [1]
+              "allergen": []
             },
             {
-              "nombre": "Croquetes de pernil",
-              "nombre_en": "Ham croquettes",
-              "nombre_es": "Croquetas de Jamón",
-              "descripcion": "per unitat",
-              "descripcion_en": "per unit",
-              "descripcion_es": "por unidad",
-              "precio": "1,50",
-              "tags": ""
+              "nombre": "La Caprese",
+              "nombre_en": "The Caprese",
+              "nombre_es": "La Caprese",
+              "descripcion": "tomàquet frest, albahaca, stracciatella i oli de pesto",
+              "descripcion_en": "Fresh tomato, basil, stracciatella and pesto oil",
+              "descripcion_es": "tomate fresco, albahaca, stracciatella y aceite de pesto",
+              "precio": "18",
+              "tags": "",
+              "allergen": []
+            },
+            {
+              "nombre": "De pernil curat",
+              "nombre_en": "With cured ham",
+              "nombre_es": "De Jamón",
+              "descripcion": "",
+              "descripcion_en": "",
+              "descripcion_es": "",
+              "precio": "15",
+              "tags": "",
+              "allergen": []
+            },
+            {
+              "nombre": "Quatre formatges",
+              "nombre_en": "Four Cheeses",
+              "nombre_es": "Cuatro Quesos",
+              "descripcion": "blau, camember, manchego i curat",
+              "descripcion_en": "blue, camembert, manchego and cured cheese",
+              "descripcion_es": "azul, camembert, manchego y curado",
+              "precio": "11",
+              "tags": "",
+              "allergen": []
+            },
+            {
+              "nombre": "La fornejada",
+              "nombre_en": "The baked",
+              "nombre_es": "La horneada",
+              "descripcion": "tomàquet sofregit, provolone, xoriço, bacon, pernil i tàperes",
+              "descripcion_en": "fried tomatoes, provolone, chorizo, bacon, ham and capers",
+              "descripcion_es": "tomate frito, provolone, chorizo, bacon, jamon y alcaparras",
+              "precio": "16",
+              "tags": "",
+              "allergen": []
             }
           ]
         },
@@ -187,7 +221,7 @@
         },
         {
           "division": "parabeber",
-          "nombre": "Vi blanc",
+          "nombre": "parabeber",
           "nombre_en": "White wine",
           "nombre_es": "Vino blanco",
           "imagen": "",
@@ -213,9 +247,9 @@
               "tags": ""
             },
             {
-              "nombre": "Verdejo Perplejo",
-              "nombre_en": "Verdejo Perplejo",
-              "nombre_es": "Verdejo Perplejo",
+              "nombre": "Verdejo Perplejo ",
+              "nombre_en": "Verdejo Perplejo ",
+              "nombre_es": "Verdejo Perplejo ",
               "descripcion": "ampolla",
               "descripcion_en": "bottle",
               "descripcion_es": "botella",
@@ -233,9 +267,9 @@
               "tags": ""
             },
             {
-              "nombre": "El mirador, negre Rioja",
-              "nombre_en": "El mirador, red Rioja",
-              "nombre_es": "El mirador, tinto Rioja",
+              "nombre": "El mirador, negre Rioja ",
+              "nombre_en": "El mirador, red Rioja ",
+              "nombre_es": "El mirador, tinto Rioja ",
               "descripcion": "ampolla",
               "descripcion_en": "bottle",
               "descripcion_es": "botella",
@@ -263,12 +297,12 @@
               "tags": ""
             },
             {
-              "nombre": "Cava Star brut nature",
-              "nombre_en": "Cava Star brut nature",
-              "nombre_es": "Cava Star brut nature",
-              "descripcion": "copa",
-              "descripcion_en": "glass wine",
-              "descripcion_es": "copa",
+              "nombre": "Cava Star brut nature ",
+              "nombre_en": "Cava Star brut nature ",
+              "nombre_es": "Cava Star brut nature ",
+              "descripcion": "copa ",
+              "descripcion_en": "glass wine ",
+              "descripcion_es": "copa ",
               "precio": "4",
               "tags": ""
             },
@@ -402,7 +436,6 @@
               "precio": "3",
               "tags": ""
             }
-            
           ]
         },
         {

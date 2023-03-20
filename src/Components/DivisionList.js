@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { DataContext } from "../Context/Context";
 import Division from "./Division";
 import { Link } from "react-router-dom";
-import olita from './../Assets/olita.png'
+// import olita from './../Assets/olita.png'
 
 const DivisionList = () => {
   const { foundPlace, lang } = useContext(DataContext);
@@ -17,15 +17,17 @@ const DivisionList = () => {
               <Link
                 style={{ color: foundPlace.color }}
                 key={index}
-                to={`${foundPlace.place}/division/${division.url}`}
+                to={`${foundPlace.place}/division/${division.url}/category/${division.url}`}
               >
-              <img className='olita' src={olita} alt=""/>
+                    <div style={{width:"40px", margin:"auto", border:".5px solid gray"}}></div>
+
                 <Division {...division} lang={lang} />
               </Link>
             );
           })}
         </ul>
-      <img className='olita' src={olita} alt=""/>
+            <div style={{width:"40px", margin:"auto", border:".5px solid gray"}}></div>
+
       </div>
     </div>
   );
